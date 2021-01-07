@@ -1,73 +1,28 @@
 package com.vast.base.core.result;
 
+import org.springframework.http.HttpStatus;
+
+import javax.servlet.http.HttpServletResponse;
+
 /**
- * ====================================================
- *
- * @ProjectName: vast-inbk
+ * @ProjectName: vastinbk
  * @Package: com.vast.base.core.result
  * @ClassName: MyResponse
- * @Author: Administrator
- * @Description: 返回前端layui的数据结构
- *
- *      当code为0的时候，count必须有值
- *
- * @Date: 2021/1/5 11:41
- * ====================================================
+ * @Author: Mr.Z
+ * @Description: 返回页面信息编码
+ * @Date: 2021/1/7 23:37
+ * <p>
+ * =================================================
  * @Version: 1.0
- * ====================================================
+ * =================================================
  */
-public class MyResponse {
+public interface MyResponse extends HttpServletResponse {
 
-    private int code;
-    private String msg;
-    private Integer count;
-    private Object data;
+    //通用===============================================
 
-    public MyResponse(int code) {
-        this(code,null);
-    }
-    public MyResponse(int code,Object data) {
-        this(code,data,null);
-    }
-    public MyResponse(int code,Object data,Integer count) {
-        this(code,data,count,null);
-    }
-    public MyResponse(int code,Object data,int count,String msg) {
-        this.code = code;
-        this.data = data;
-        this.count = count;
-        this.msg = msg;
-    }
 
-    public int getCode() {
-        return code;
-    }
 
-    public void setCode(int code) {
-        this.code = code;
-    }
+    //PC=================================================
 
-    public String getMsg() {
-        return msg;
-    }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(Integer count) {
-        this.count = count;
-    }
-
-    public Object getData() {
-        return data;
-    }
-
-    public void setData(Object data) {
-        this.data = data;
-    }
 }

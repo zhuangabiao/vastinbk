@@ -17,12 +17,14 @@ import org.springframework.http.HttpStatus;
  */
 public enum ExceptionEnum {
 
+    PC_OK(HttpStatus.OK,"传入参数是空的"),
+
     //传入的空参数异常
     WE_SERVICE_NOT_ACCEPTABL(HttpStatus.NOT_ACCEPTABLE,"传入参数是空的");
     private HttpStatus status;
     private String msg;
 
-    ExceptionEnum(HttpStatus status,String msg) {
+    ExceptionEnum(HttpStatus status, String msg) {
         this.status = status;
         this.msg = msg;
     }

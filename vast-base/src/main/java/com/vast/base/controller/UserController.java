@@ -1,5 +1,6 @@
 package com.vast.base.controller;
 
+import com.vast.base.core.result.BaseResult;
 import com.vast.base.core.result.MyResponse;
 import com.vast.base.entity.BaseUsers;
 import com.vast.base.service.IBaseUserService;
@@ -31,9 +32,9 @@ public class UserController {
 
     @RequestMapping("/allList")
     @ResponseBody
-    public MyResponse findAll() {
+    public BaseResult findAll() {
         List<BaseUsers> list = baseUserService.findAll();
-        return new MyResponse(0,list,1);
+        return new BaseResult(MyResponse.SC_OK,list,null);
     }
 
     @RequestMapping("/listPage")

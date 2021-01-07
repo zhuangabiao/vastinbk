@@ -67,16 +67,16 @@
         <legend>欢迎登陆 - MarkDown管理平台</legend>
     </fieldset>
     <div class="layui-row layui-col-space15">
-        <form class="layui-form zyl_pad_01" action="/vast/login">
+        <form id="login_form" class="layui-form zyl_pad_01" action="/vast/login">
             <div class="layui-col-sm12 layui-col-md12">
                 <div class="layui-form-item">
-                    <input type="text" name="userName" lay-verify="required|userName" autocomplete="off" placeholder="账号" class="layui-input">
+                    <input type="text" name="username" lay-verify="required|userName" autocomplete="off" placeholder="账号" class="layui-input">
                     <i class="layui-icon layui-icon-username zyl_lofo_icon"></i>
                 </div>
             </div>
             <div class="layui-col-sm12 layui-col-md12">
                 <div class="layui-form-item">
-                    <input type="password" name="password" lay-verify="required|pass" autocomplete="off" placeholder="密码" class="layui-input">
+                    <input type="password" name="pwd" lay-verify="required|pass" autocomplete="off" placeholder="密码" class="layui-input">
                     <i class="layui-icon layui-icon-password zyl_lofo_icon"></i>
                 </div>
             </div>
@@ -130,6 +130,8 @@
                 // if(value!=zylVerCode){
                 //     return '验证码错误（区分大小写）';
                 // }
+
+
             }
             ,content: function(value){
                 layedit.sync(editIndex);
@@ -142,6 +144,24 @@
             //     title: '最终的提交信息'
             // })
             // return false;
+            //将form中的键值对转换为集合对象
+            alert(JSON.stringify(data.field));
+            $.ajax({
+                url: "/vast/login",
+                type: "POST",
+                data: JSON.stringify(data.field),
+                dataType: 'JSON',
+                //声明以json格式发送
+                contentType: "application/json;charset=UTF-8",
+                success: function (data) {
+                    alert(data);
+                    if(data === 'home') {
+                        return true;
+                    }else {
+                        return false;
+                    }
+                }
+            })
             return true;
         });
 

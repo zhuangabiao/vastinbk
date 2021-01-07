@@ -1,5 +1,6 @@
 package com.vast.base.service;
 
+import com.vast.base.core.result.BaseResult;
 import com.vast.base.core.service.IBaseDBService;
 import com.vast.base.entity.BaseUsers;
 
@@ -18,4 +19,5 @@ import com.vast.base.entity.BaseUsers;
  * ====================================================
  */
 public interface IBaseUserService extends IBaseDBService<BaseUsers> {
+    BaseResult login(String username, String pwd);
 }
