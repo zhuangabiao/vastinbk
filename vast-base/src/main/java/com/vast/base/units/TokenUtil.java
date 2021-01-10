@@ -3,10 +3,11 @@ package com.vast.base.units;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.vast.base.entity.BaseUsers;
-import org.springframework.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
@@ -49,8 +50,15 @@ public class TokenUtil {
     }
 
     public static String getTokenUserId() {
-        String token = getRequest().getHeader(SystemFinal.KEY_AUTHOR_TOKEN);// 从 http 请求头中取出 token
-        if(StringUtils.isEmpty(token)) {
+//        String token = getRequest().getHeader(SystemFinal.KEY_AUTHOR_TOKEN);// 从 http 请求头中取出 token
+        Cookie[] cookies = getRequest().getCookies();
+        String token = null;
+        for (Cookie cookie : cookies) {
+            if(SystemFinal.KEY_AUTHOR_TOKEN.equals(cookie.getName())){
+                token = cookie.getValue();
+            }
+        }
+        if(StringUtils.isBlank(token)) {
             return null;
         }
         String userId = JWT.decode(token).getAudience().get(0);

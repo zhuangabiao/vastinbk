@@ -34,7 +34,7 @@ public class UserController {
     @ResponseBody
     public BaseResult findAll() {
         List<BaseUsers> list = baseUserService.findAll();
-        return new BaseResult(MyResponse.SC_OK,list,null);
+        return new BaseResult(MyResponse.OK,list,null);
     }
 
     @RequestMapping("/listPage")

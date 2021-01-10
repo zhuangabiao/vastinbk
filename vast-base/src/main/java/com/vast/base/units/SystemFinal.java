@@ -27,6 +27,8 @@ public class SystemFinal {
     //用户登录的token数据
     public static final String KEY_AUTHOR_TOKEN = "author_token";
 
+
+
     //验证码
     public static final String KEY_VERIFY_CODE = "verify_code";
 }

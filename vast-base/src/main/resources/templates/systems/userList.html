@@ -23,10 +23,12 @@
     <input type="checkbox" name="lock" value="{{d.id}}" title="锁定" lay-filter="lockDemo" {{ d.id == 10006 ? 'checked' : '' }}>
 </script>
 
-
-
 <script th:src="@{/static/layui/layui.js?t=1606406696877}" charset="utf-8"></script>
-<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
 
 <script>
     layui.use('table', function(){
@@ -37,6 +39,7 @@
             elem: '#test'
             ,url:'/vast/user/allList'
             ,cellMinWidth: 80
+            ,toolbar: '#toolbarDemo' //开启头部工具栏，并为其绑定左侧模板
             ,cols:
                 [
                   [
@@ -48,6 +51,7 @@
                 ,{field:'wealth', title: '财富', minWidth:120, sort: true}
                 ,{field:'sex', title:'性别', width:85, templet: '#switchTpl', unresize: true}
                 ,{field:'lock', title:'是否锁定', width:110, templet: '#checkboxTpl', unresize: true}
+                ,{fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
              ]
                 ]
             ,page: true

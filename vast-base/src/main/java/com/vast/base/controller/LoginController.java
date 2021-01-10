@@ -7,17 +7,17 @@ import com.vast.base.core.result.MyResponse;
 import com.vast.base.entity.BaseUsers;
 import com.vast.base.service.IBaseUserService;
 import com.vast.base.units.SystemFinal;
+import com.vast.base.units.TokenUtil;
 import com.vast.base.units.VerifyUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 
 @Controller
 @RequestMapping("/vast")
@@ -42,25 +42,28 @@ public class LoginController extends BaseController {
         }
     }
 
-    @ResponseBody
-    @PostMapping("/login")
-    public BaseResult login(HttpServletRequest request, String username, String pwd, String verifyCode) {
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    public String login(HttpServletRequest request, HttpServletResponse response, String username, String pwd,
+                        String verifyCode, ModelAndView model) {
         try {
-            if(StringUtils.isNoneBlank(username) && StringUtils.isNoneBlank(pwd) && StringUtils.isNoneBlank(verifyCode)) {
-                return new BaseResult(HttpServletResponse.SC_NO_CONTENT,"登录信息不完整",null);
+            if(StringUtils.isBlank(username) || StringUtils.isBlank(pwd) || StringUtils.isBlank(verifyCode)) {
+                model.addObject("data",new BaseResult(HttpServletResponse.SC_NO_CONTENT,"登录信息不完整",null));
+                response.sendRedirect("/vast/login2Page");
             }
 
             Object code = request.getSession().getAttribute(SystemFinal.KEY_VERIFY_CODE);
             if(code.toString().equals(verifyCode)){
                 BaseResult result = userService.login(username,pwd);
                 BaseUsers user = (BaseUsers) result.getData();
+                Cookie cookie = new Cookie(SystemFinal.KEY_AUTHOR_TOKEN, TokenUtil.getToken(user));
+                response.addCookie(cookie);
                 request.getSession().setAttribute(SystemFinal.KEY_SESSION,user.getUsername());
-                return result;
+                return "home";
             }
         }catch (Exception e) {
             logger.error(">>>>>>>>>>>>>>登录异常");
         }
-        return new BaseResult(MyResponse.SC_MULTIPLE_CHOICES);
+        return "login";
     }
 
     @RequestMapping("/loginPage")

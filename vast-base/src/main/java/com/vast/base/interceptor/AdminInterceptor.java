@@ -1,9 +1,8 @@
 package com.vast.base.interceptor;
 
-import com.vast.base.units.LoginContext;
-import com.vast.base.units.SystemFinal;
+
 import com.vast.base.units.TokenUtil;
-import org.springframework.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -42,9 +41,9 @@ public class AdminInterceptor implements HandlerInterceptor {
      */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-
+        String url = request.getRequestURL().toString();
         String userId = TokenUtil.getTokenUserId();
-        if(!StringUtils.isEmpty(userId)) {
+        if(StringUtils.isNotBlank(userId)) {
             return true;
         }
         return false;

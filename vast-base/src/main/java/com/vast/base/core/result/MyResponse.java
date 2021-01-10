@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 public interface MyResponse extends HttpServletResponse {
 
     //通用===============================================
-
+    public static final int OK = 0;
 
 
     //PC=================================================

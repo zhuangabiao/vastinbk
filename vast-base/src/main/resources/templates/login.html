@@ -67,7 +67,7 @@
         <legend>欢迎登陆 - MarkDown管理平台</legend>
     </fieldset>
     <div class="layui-row layui-col-space15">
-        <form id="login_form" class="layui-form zyl_pad_01" action="/vast/login">
+        <form id="login_form" class="layui-form zyl_pad_01" method="post" action="/vast/login">
             <div class="layui-col-sm12 layui-col-md12">
                 <div class="layui-form-item">
                     <input type="text" name="username" lay-verify="required|userName" autocomplete="off" placeholder="账号" class="layui-input">
@@ -84,7 +84,7 @@
                 <div class="layui-row">
                     <div class="layui-col-xs5 layui-col-sm5 layui-col-md5">
                         <div class="layui-form-item">
-                            <input type="text" name="vercode" id="vercode" lay-verify="required|vercodes" autocomplete="off" placeholder="验证码" class="layui-input" maxlength="4">
+                            <input type="text" name="verifyCode" id="vercode" lay-verify="required|vercodes" autocomplete="off" placeholder="验证码" class="layui-input" maxlength="4">
                             <i class="layui-icon layui-icon-vercode zyl_lofo_icon"></i>
                         </div>
                     </div>
@@ -140,28 +140,7 @@
 
         //监听提交
         form.on('submit(demo1)', function(data){
-            // layer.alert(JSON.stringify(data.field),{
-            //     title: '最终的提交信息'
-            // })
-            // return false;
-            //将form中的键值对转换为集合对象
-            alert(JSON.stringify(data.field));
-            $.ajax({
-                url: "/vast/login",
-                type: "POST",
-                data: JSON.stringify(data.field),
-                dataType: 'JSON',
-                //声明以json格式发送
-                contentType: "application/json;charset=UTF-8",
-                success: function (data) {
-                    alert(data);
-                    if(data === 'home') {
-                        return true;
-                    }else {
-                        return false;
-                    }
-                }
-            })
+
             return true;
         });
 
@@ -204,7 +183,6 @@
         });
 
         $('#imgObj').on('click',function () {
-
             $('#imgObj').attr("src","/vast/verifyCode?rmd="+new Date().getTime());
         })
     });
