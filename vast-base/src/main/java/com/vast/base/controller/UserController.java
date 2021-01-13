@@ -6,7 +6,9 @@ import com.vast.base.entity.BaseUsers;
 import com.vast.base.service.IBaseUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
@@ -29,6 +31,21 @@ public class UserController {
 
     @Autowired
     private IBaseUserService baseUserService;
+
+    @RequestMapping("/addIndex")
+    public String addPage() {
+
+        return "systems/addUser";
+    }
+
+    @RequestMapping(value = "/addUser",method = RequestMethod.POST)
+    @ResponseBody
+    public BaseResult addUser(@RequestBody BaseUsers baseUsers) {
+
+        System.out.println(baseUsers.getUsername());
+
+        return new BaseResult(MyResponse.OK,baseUsers,null);
+    }
 
     @RequestMapping("/allList")
     @ResponseBody
