@@ -2,6 +2,7 @@ package com.vast.base.entity;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * ====================================================
@@ -28,7 +29,10 @@ public class BaseUsers {
     private Double wealth;
     private Integer sex;
     private Integer locked;
-
+    private Date birthday;
+    private String phone;
+    private String email;
+    private String remark;
 
     public Integer getId() {
         return id;
@@ -92,5 +96,37 @@ public class BaseUsers {
 
     public void setLocked(Integer locked) {
         this.locked = locked;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
     }
 }

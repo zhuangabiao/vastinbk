@@ -20,4 +20,6 @@ import com.vast.base.entity.BaseUsers;
  */
 public interface IBaseUserService extends IBaseDBService<BaseUsers> {
     BaseResult login(String username, String pwd);
+
+    BaseResult save(BaseUsers baseUsers);
 }

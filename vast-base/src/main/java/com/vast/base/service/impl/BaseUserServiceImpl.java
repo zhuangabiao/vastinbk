@@ -41,4 +41,17 @@ public class BaseUserServiceImpl extends BaseDBServiceImpl<BaseUsers> implements
         }
         return new BaseResult(MyResponse.SC_OK,list.get(0));
     }
+
+    @Override
+    public BaseResult save(BaseUsers baseUsers) {
+
+        BaseUsers user = new BaseUsers();
+        user.setUsername(baseUsers.getUsername());
+        List<BaseUsers> userList = this.findByEntity(user);
+        if(null ==userList || userList.size() <= 0) {
+            this.insert(baseUsers);
+            return new BaseResult(MyResponse.SC_OK);
+        }
+        return new BaseResult(MyResponse.HAS_DATA,null,"账号已经存在");
+    }
 }

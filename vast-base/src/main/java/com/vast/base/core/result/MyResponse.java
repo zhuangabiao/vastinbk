@@ -21,6 +21,8 @@ public interface MyResponse extends HttpServletResponse {
     //通用===============================================
     public static final int OK = 0;
 
+    public static final int HAS_DATA = 251;
+
 
     //PC=================================================
 

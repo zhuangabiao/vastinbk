@@ -114,9 +114,15 @@
                     this.layerIndex = layer.load(0, { shade: [0.5, '#393D49'] });
                 },
                 success:function(data){
-                    parent.location.reload();
+                    if(data.code == 200) {
+                        parent.location.reload();
+                    }else if(data.code == 251){
+                        layer.alert(data.msg);
+                    }
+
                 },
                 complete: function () {
+
                     layer.close(this.layerIndex);
                 },
             });

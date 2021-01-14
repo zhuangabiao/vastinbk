@@ -4,6 +4,7 @@ import com.vast.base.core.result.BaseResult;
 import com.vast.base.core.result.MyResponse;
 import com.vast.base.entity.BaseUsers;
 import com.vast.base.service.IBaseUserService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -41,10 +42,11 @@ public class UserController {
     @RequestMapping(value = "/addUser",method = RequestMethod.POST)
     @ResponseBody
     public BaseResult addUser(@RequestBody BaseUsers baseUsers) {
-
-        System.out.println(baseUsers.getUsername());
-
-        return new BaseResult(MyResponse.OK,baseUsers,null);
+        if(null != baseUsers) {
+            baseUsers.setStatus(1);
+            return baseUserService.save(baseUsers);
+        }
+        return new BaseResult(MyResponse.SC_NO_CONTENT,null,"传入参数为空");
     }
 
     @RequestMapping("/allList")

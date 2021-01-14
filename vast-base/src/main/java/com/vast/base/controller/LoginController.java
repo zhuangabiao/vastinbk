@@ -52,7 +52,7 @@ public class LoginController extends BaseController {
             }
 
             Object code = request.getSession().getAttribute(SystemFinal.KEY_VERIFY_CODE);
-            if(code.toString().equals(verifyCode)){
+            if(code.toString().equals(verifyCode.toUpperCase())){
                 BaseResult result = userService.login(username,pwd);
                 BaseUsers user = (BaseUsers) result.getData();
                 Cookie cookie = new Cookie(SystemFinal.KEY_AUTHOR_TOKEN, TokenUtil.getToken(user));
