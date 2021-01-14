@@ -17,7 +17,7 @@ create table base_users(
     email varchar(30) comment '邮箱',
     remark varchar(200) comment '备注'
 );
-insert into base_users(username,pwd,status,city,wealth,sex,locked,phone,emal,birthday,remark)
+insert into base_users(username,pwd,status,city,wealth,sex,locked,phone,email,birthday,remark)
 value('admin','123456',1,3021,1200932223.32,1,0,'15259250835','hzwyingyan@126.com','2020-11-23','测试账号');
 
 -- 角色表
