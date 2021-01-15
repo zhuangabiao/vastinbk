@@ -31,6 +31,8 @@ create table base_role(
     remark varchar(100) comment '备注'
 );
 
+insert into base_users(role_code,role_name,status,sort_no,remark) value ('10001','超级管理员',1,1,'测试用的');
+
 -- 菜单表
 drop table if exists base_menus;
 create table base_menus(
