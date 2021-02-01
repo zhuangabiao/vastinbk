@@ -12,9 +12,26 @@ module.exports = {
         nav:[ // 导航栏配置
             {text: '前端基础', link: '/accumulate/' },
             {text: '算法题库', link: '/algorithm/'},
-            {text: '微博', link: 'https://baidu.com'}
+            {text: '微博', link: 'https://baidu.com'},
+            { text: '学习',
+                items: [
+                    { text: '英语', link: '/study/english/english01' },
+                    { text: '数学', link: '/study/math/math01' },
+                ]
+            }
         ],
-        sidebar: 'auto', // 侧边栏配置
+        // 侧边栏配置
+        sidebar: {
+          '/home/':{
+              title: '',
+              collapsable: false,
+              children: [
+                  { title: '生活测试01', path: '/life/life01' },
+                  { title: '生活测试02', path: '/life/life02' },
+                  { title: '生活测试03', path: '/life/life03' },
+              ]
+          }
+        },
         sidebarDepth: 2, // 侧边栏显示2级
     }
 };

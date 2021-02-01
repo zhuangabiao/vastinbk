@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6e83f1-7965-4e2b-af0b-f0b0b15b85d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vastinbk.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-web-base/vast-web-base.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-web-markdown/docs/.vuepress/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-web-markdown/docs/Home.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-web-markdown/docs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-web-markdown/vast-web-markdown.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/interceptor/AdminInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/interceptor/AdminInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vast-base/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vast-web-markdown/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vast-web-markdown/docs/.vuepress/config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/vast-base/target/" />
@@ -48,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vast-web-markdown/docs/.vuepress/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            <state relative-caret-position="385">
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -225,18 +217,25 @@
       <workItem from="1611047741206" duration="1904000" />
       <workItem from="1611106018066" duration="534000" />
       <workItem from="1611132091527" duration="2388000" />
-      <workItem from="1612163738857" duration="3323000" />
+      <workItem from="1612163738857" duration="6614000" />
     </task>
+    <task id="LOCAL-00001" summary="新增两个项目模块">
+      <created>1612167347205</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612167347205</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8149000" />
+    <option name="totallyTimeSpent" value="11440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19989339" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19989339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -252,7 +251,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2407809" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2462039" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
@@ -272,6 +271,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增两个项目模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增两个项目模块" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DB.sql">
@@ -348,8 +351,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vast-web-markdown/docs/.vuepress/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="385">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
         </state>
       </provider>
     </entry>
