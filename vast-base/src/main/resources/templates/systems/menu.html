@@ -74,6 +74,10 @@
             elem: '#menus'
             ,data: data2
             ,value: ["1", "3", "5", "7", "9", "11"]
+            ,onchange: function(obj, index){
+                var arr = ['左边', '右边'];
+                layer.alert('来自 <strong>'+ arr[index] + '</strong> 的数据：'+ JSON.stringify(obj)); //获得被穿梭时的数据
+            }
         })
 
         //显示搜索框

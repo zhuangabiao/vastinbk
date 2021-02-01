@@ -41,10 +41,11 @@ public class AdminInterceptor implements HandlerInterceptor {
      */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String url = request.getRequestURL().toString();
         String userId = TokenUtil.getTokenUserId();
         if(StringUtils.isNotBlank(userId)) {
             return true;
+        }else {
+            response.sendRedirect("/vast/login2Page");
         }
         return false;
     }
