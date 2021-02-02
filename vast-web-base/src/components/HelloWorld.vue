@@ -5,14 +5,7 @@
   </div>
 </template>
   <script>
-    import Vue from 'vue'
-    new Vue({
-      el: '#app',
-      data: {
-        message: 'hello word'
-      }
-    })
-    /*export default {
+    export default {
       name: 'app',
       data(){
         return {
@@ -23,7 +16,7 @@
 
       }
 
-    }*/
+    }
 /*    var app = new Vue({
       el: '#app',
       data: {
