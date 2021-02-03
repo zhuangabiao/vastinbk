@@ -13,7 +13,7 @@ module.exports = {
     themeConfig: {
         logo: '/images/logo.jpg',
         nav:[ // 导航栏配置
-            {text: '前端基础', link: '/accumulate/' },
+            {text: '前端基础', link: 'localhost:9091/vast/page/index' },
             {text: '算法题库', link: '/algorithm/'},
             {text: '微博', link: 'https://baidu.com'},
             { text: '学习',

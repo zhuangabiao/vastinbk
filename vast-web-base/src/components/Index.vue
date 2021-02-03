@@ -1,14 +1,25 @@
 <template>
-  <div id="index">
-    <h1>{{msg}}</h1>
-  </div>
+    <div id="home-index">
+      <div>
+        {{msg}}
+      </div>
+    </div>
 </template>
 
 <script>
-  new Vue({
-    el: '',
-    data: {
-      msg: 'hello word'
+  export default{
+    name: "home-index",
+    data() {
+      return {
+        msg: "Hello word,I am Ms.Z"
+      }
     }
-  })
+  }
 </script>
+
+<style>
+
+  #home-index{
+    background-image: url('/static/images/1.jpg');
+  }
+</style>
