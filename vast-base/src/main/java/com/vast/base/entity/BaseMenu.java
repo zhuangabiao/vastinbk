@@ -23,8 +23,10 @@ public class BaseMenu {
     private String menuCode;
     private String menuName;
     private String parentCode;
+    private String menuUrl;
     private int sortNo;
     private String remark;
+    private int menuType;
 
     public int getId() {
         return id;
@@ -72,5 +74,21 @@ public class BaseMenu {
 
     public void setRemark(String remark) {
         this.remark = remark;
+    }
+
+    public String getMenuUrl() {
+        return menuUrl;
+    }
+
+    public void setMenuUrl(String menuUrl) {
+        this.menuUrl = menuUrl;
+    }
+
+    public int getMenuType() {
+        return menuType;
+    }
+
+    public void setMenuType(int menuType) {
+        this.menuType = menuType;
     }
 }

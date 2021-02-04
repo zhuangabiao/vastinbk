@@ -20,6 +20,6 @@
 <style>
 
   #home-index{
-    background-image: url('/static/images/1.jpg');
+    /*background-image: url('/static/images/1.jpg');*/
   }
 </style>

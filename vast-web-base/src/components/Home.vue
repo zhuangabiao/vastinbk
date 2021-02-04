@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header >
+      <el-header  class="header-bottom-border">
         <MyHead></MyHead>
       </el-header>
-      <el-container class="my-border">
-        <el-aside width="200px" class="my-border">
+      <el-container>
+        <el-aside width="300px" class="saide-right-border">
           <MySaide></MySaide>
         </el-aside>
-        <el-container class="my-border">
+        <el-container>
           <el-main class="my-border">
             <Index></Index>
           </el-main>
@@ -82,10 +82,13 @@
       margin: 0px;
       padding: 0px;
     }
-    .my-border{
-      box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+    .header-bottom-border{
+      /*box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)*/
+      border-bottom: 1px solid #eaecef;
     }
-
+    .saide-right-border{
+      border-right: 1px solid #eaecef;
+    }
     body > .el-container {
       margin-bottom: 40px;
       height: 100%;
