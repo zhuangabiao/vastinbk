@@ -1,7 +1,10 @@
 package com.vast.base.service;
 
 import com.vast.base.core.service.IBaseDBService;
+import com.vast.base.dto.vo.BaseMenuVo;
 import com.vast.base.entity.BaseMenu;
+
+import java.util.List;
 
 /**
  * @ProjectName: vastinbk
@@ -16,4 +19,6 @@ import com.vast.base.entity.BaseMenu;
  * =================================================
  */
 public interface IBaseMenuService extends IBaseDBService<BaseMenu> {
+
+    List<BaseMenuVo> findList(String parentCode);
 }

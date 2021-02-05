@@ -2,22 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6e83f1-7965-4e2b-af0b-f0b0b15b85d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vast-base/src/main/resources/static/css/treetable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/tableEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/tableTree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/treetable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-base/src/main/resources/static/json/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WEBNOOTBOOK.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/dto/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/dto/vo/BaseMenuVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/units/MyGsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/treetable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vast-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/config/LoginConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/config/LoginConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/entity/BaseMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/entity/BaseMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/IBaseMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/IBaseMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/impl/BaseMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/impl/BaseMenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/treetable.js" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/treetable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vast-base/src/main/resources/static/layui/lay/modules/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/resources/static/layui/lay/modules/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vast-base/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vast-web-base/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vast-web-base/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vast-web-base/src/components/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vast-web-base/src/components/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vast-web-base/src/components/MyHead.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vast-web-base/src/components/MyHead.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vast-web-base/src/components/MySaide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vast-web-base/src/components/MySaide.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree.html" beforeDir="false" afterPath="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/vast-base/target/" />
@@ -36,13 +37,81 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+            <state relative-caret-position="227">
+              <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
               <folding>
                 <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1127#1128#0" expanded="true" />
+                <element signature="e#1200#1201#0" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/units/MyGsonUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar!/com/google/gson/JsonParser.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-150">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/IBaseMenuService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/impl/BaseMenuServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vast-base/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/dto/package-info.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/dto/vo/BaseMenuVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,18 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/entity/BaseMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
-              <folding>
-                <element signature="e#1519#1520#0" expanded="true" />
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1595#1596#0" expanded="true" />
-                <element signature="e#1633#1634#0" expanded="true" />
-                <element signature="e#1695#1696#0" expanded="true" />
-                <element signature="e#1726#1727#0" expanded="true" />
-                <element signature="e#1771#1772#0" expanded="true" />
-                <element signature="e#1811#1812#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -71,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menu.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -83,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-262">
-              <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            <state relative-caret-position="400">
+              <caret line="49" column="41" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="49" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -95,11 +154,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="109" column="22" selection-start-line="105" selection-start-column="29" selection-end-line="109" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/tableEdit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3825">
+              <caret line="153" column="48" selection-start-line="153" selection-start-column="48" selection-end-line="153" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/treetable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
+            <state relative-caret-position="4725">
+              <caret line="189" column="9" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -107,14 +184,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/tableTree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="15825">
+              <caret line="633" column="80" selection-start-line="633" selection-start-column="70" selection-end-line="633" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -122,8 +193,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/layui/lay/modules/tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="75">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -131,8 +202,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/userList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1675">
-              <caret line="67" column="25" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="1225">
+              <caret line="49" column="31" selection-start-line="45" selection-start-column="12" selection-end-line="49" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -160,8 +231,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -175,6 +247,9 @@
       <find>moduleName</find>
       <find>tableEdit.js</find>
       <find>tableEdit</find>
+      <find>showField</find>
+      <find>treeConfig</find>
+      <find>complain</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,14 +273,24 @@
         <option value="$PROJECT_DIR$/vast-web-base/src/components/Home.vue" />
         <option value="$PROJECT_DIR$/vast-web-base/src/components/MySaide.vue" />
         <option value="$PROJECT_DIR$/vast-web-base/src/components/MyHead.vue" />
-        <option value="$PROJECT_DIR$/vast-base/src/main/resources/static/layui/lay/modules/tree.js" />
         <option value="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menu.html" />
         <option value="$PROJECT_DIR$/vast-base/src/main/resources/templates/home.html" />
-        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/entity/BaseMenu.java" />
-        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/MenuController.java" />
         <option value="$PROJECT_DIR$/vast-base/src/main/resources/static/json/data.json" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/entity/BaseMenu.java" />
         <option value="$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/treetable.js" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/resources/static/layui/lay/modules/tree.js" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/tableEdit.js" />
         <option value="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree.html" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/config/LoginConfig.java" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree2.html" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/IBaseMenuService.java" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/units/MyJSONUtil.java" />
+        <option value="$PROJECT_DIR$/vast-base/pom.xml" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/units/MyGsonUtil.java" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/dto/vo/BaseMenuVo.java" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/impl/BaseMenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/WEBNOOTBOOK.md" />
       </list>
     </option>
   </component>
@@ -234,7 +319,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,33 +344,6 @@
               <item name="vast-base" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vastinbk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vastinbk" type="462c0819:PsiDirectoryNode" />
-              <item name="vast-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vastinbk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vastinbk" type="462c0819:PsiDirectoryNode" />
-              <item name="vast-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vastinbk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vastinbk" type="462c0819:PsiDirectoryNode" />
-              <item name="vast-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vastinbk" type="b2602c69:ProjectViewProjectNode" />
@@ -332,16 +390,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vastinbk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vastinbk" type="462c0819:PsiDirectoryNode" />
-              <item name="vast-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -358,10 +406,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -370,22 +419,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vast-base/src/main/resources/templates/systems" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\js\tableTree" />
-      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\layui\lay\modules" />
-      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\layui\tabletree" />
-      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\tableTree\js" />
-      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\css" />
       <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\tableTree" />
       <recent name="F:\workspace\vast\vastinbk\vast-web-markdown\docs\.vuepress" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\templates\systems" />
+      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\js\tableTree" />
+      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\layui\lay\modules" />
+      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\layui\tabletree" />
+      <recent name="F:\workspace\vast\vastinbk\vast-base\src\main\resources\static\tableTree\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -400,7 +449,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.VastBaseApplication">
+    <configuration name="MyGsonUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vast.base.units.MyGsonUtil" />
+      <module name="vast-base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vast.base.units.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VastBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="vast-base" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vast.base.VastBaseApplication" />
@@ -408,6 +470,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyGsonUtil" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -425,7 +492,9 @@
       <workItem from="1612163738857" duration="6614000" />
       <workItem from="1612185514950" duration="5157000" />
       <workItem from="1612254515117" duration="43579000" />
-      <workItem from="1612425848390" duration="6880000" />
+      <workItem from="1612425848390" duration="7133000" />
+      <workItem from="1612488675189" duration="14047000" />
+      <workItem from="1612508837542" duration="8912000" />
     </task>
     <task id="LOCAL-00001" summary="新增两个项目模块">
       <created>1612167347205</created>
@@ -455,17 +524,24 @@
       <option name="project" value="LOCAL" />
       <updated>1612346547721</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增tableTree">
+      <created>1612432989695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612432989695</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68970000" />
+    <option name="totallyTimeSpent" value="92182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16364606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -476,7 +552,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.23535791" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.29501083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -505,97 +581,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增两个项目模块" />
     <MESSAGE value="新增首页" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增首页" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/MenuController.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="新增tableTree" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增tableTree" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DB.sql" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.3.2/spring-webmvc-5.3.2.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="75" column="80" lean-forward="true" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/VastBaseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/interceptor/AdminInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-web-markdown/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-web-markdown/docs/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="12" selection-start-column="12" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-web-markdown/docs/Home.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-web-markdown/docs/.vuepress/public/index.js" />
-    <entry file="file://$PROJECT_DIR$/vast-web-base/src/components/首页" />
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-web-markdown/docs/.vuepress/Head.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-web-markdown/docs/.vuepress/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vast-web-base/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -688,20 +677,6 @@
     <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/layui/tabletree/tableTree.js" />
     <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/layui/tabletree/tableEdit.js" />
     <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/layui/lay/modules/tableTree.js" />
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/userList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1675">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/css/treetable.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -712,43 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/entity/BaseMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1595#1596#0" expanded="true" />
-            <element signature="e#1633#1634#0" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1726#1727#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-            <element signature="e#1811#1812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/layui/lay/modules/tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/json/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
@@ -756,23 +694,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/tableTree.js">
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/treetable.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar!/org/thymeleaf/engine/TemplateManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="321" selection-start-line="321" selection-end-line="321" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/data.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/core/service/IBaseDBService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/config/LoginConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/interceptor/AdminInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -783,6 +742,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/tableEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3825">
+          <caret line="153" column="48" selection-start-line="153" selection-start-column="48" selection-end-line="153" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/treetable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4725">
+          <caret line="189" column="9" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/tableTree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15825">
+          <caret line="633" column="80" selection-start-line="633" selection-start-column="70" selection-end-line="633" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/layui/lay/modules/tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/userList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" column="31" selection-start-line="45" selection-start-column="12" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -790,35 +784,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/tableEdit.js">
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="625">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/units/SystemFinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/units/VerifyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-310">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/IBaseMenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.2/spring-web-5.3.2.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="110" column="66" lean-forward="true" selection-start-line="110" selection-start-column="66" selection-end-line="110" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar!/com/google/gson/JsonParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/units/MyJSONUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/service/impl/BaseMenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/static/js/tableTree/treetable.js">
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/dto/package-info.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/entity/BaseMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
+        <state relative-caret-position="225">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/units/MyGsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/java/com/vast/base/dto/vo/BaseMenuVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-262">
-          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        <state relative-caret-position="400">
+          <caret line="49" column="41" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="49" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEBNOOTBOOK.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="375">
+            <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vast-base/src/main/resources/templates/systems/menuTree2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="109" column="22" selection-start-line="105" selection-start-column="29" selection-end-line="109" selection-end-column="22" />
         </state>
       </provider>
     </entry>

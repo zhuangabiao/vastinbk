@@ -15,7 +15,7 @@ import javax.persistence.Table;
  * @Version: 1.0
  * =================================================
  */
-@Table(name = "base_menu")
+@Table(name = "base_menus")
 public class BaseMenu {
 
     @Id

@@ -2,6 +2,7 @@ package com.vast.base.controller;
 
 import com.vast.base.core.result.BaseResult;
 import com.vast.base.core.result.MyResponse;
+import com.vast.base.dto.vo.BaseMenuVo;
 import com.vast.base.entity.BaseMenu;
 import com.vast.base.service.IBaseMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,8 +45,9 @@ public class MenuController {
     }
 
     @RequestMapping("/listMenu")
+    @ResponseBody
     public BaseResult listMenu() {
-        List<BaseMenu> list = baseMenuService.findAll();
+        List<BaseMenuVo> list = baseMenuService.findList("0");
         if(null != list && list.size() > 0) {
             return new BaseResult(MyResponse.OK,list);
         }
