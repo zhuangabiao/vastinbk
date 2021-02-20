@@ -2,7 +2,7 @@
   <div id="MyHead">
     <el-row>
       <el-col :span="4">
-        <el-avatar :size="60" src="https://empty" @error="errorHandler" style="margin-top:10px;">
+        <el-avatar :size="60" src="#" @error="errorHandler" style="margin-top:10px;">
           <img src="/static/images/logo.jpg" style="width:60px;"/>
         </el-avatar>
       </el-col>

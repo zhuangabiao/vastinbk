@@ -36,7 +36,7 @@
 </script>
 
 <style>
-  html,body,#mySaide,.tac,div{
+  html,body,#mySaide,.tac{
     /*统一设置高度为100%*/
     height: 100%;
   }

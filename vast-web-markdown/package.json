@@ -13,5 +13,8 @@
   "directories": {
     "doc": "docs"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "mavon-editor": "^2.9.1"
+  }
 }

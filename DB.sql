@@ -57,3 +57,27 @@ create table base_menu_role(
     menu_code varchar(20) not null comment '菜单编号',
     role_code varchar(20) not null comment '角色编号'
 );
+
+
+-- 笔记文本记录表
+drop table if exists mark_note;
+create table mark_note(
+    id int primary key auto_increment,
+    file_code varchar(32) comment '目录编码',
+    note_title varchar(200) comment '标题',
+    note_content MEDIUMTEXT comment '文本内容',
+    create_date date comment '创建时间',
+    update_date date comment '修改时间',
+    create_user varchar(32) comment '创建人'
+);
+
+-- 笔记目录表
+drop table if exists mark_note_menu;
+create table mark_note_menu(
+    file_code varchar(32) primary key comment '目录编号',
+    user_id int comment '用户ID',
+    file_name varchar(100) comment '目录名称',
+    parent_code varchar(32) comment '上级目录，如果是第一级目录则为0',
+    state int comment '状态'
+);
+

@@ -6,7 +6,7 @@
       </el-header>
       <el-container>
         <el-aside width="300px" class="saide-right-border">
-          <MySaide></MySaide>
+          <NodeSaide></NodeSaide>
         </el-aside>
         <el-container>
           <el-main class="my-border">
@@ -22,13 +22,15 @@
     import MyHead from '@/components/MyHead.vue';
     import MySaide from '@/components/MySaide.vue';
     import Index from '@/components/Index.vue';
+    import NodeSaide from '@/components/NodeSaide.vue';
 
     export default {
       name: 'app',
       components: {
         MyHead,
         MySaide,
-        Index
+        Index,
+        NodeSaide
       },
       data(){
         return {

@@ -1,25 +1,32 @@
 <template>
-    <div id="home-index">
-      <div>
-        {{msg}}
-      </div>
+    <div id="editor">
+        <mavon-editor  v-model="value"/>
     </div>
 </template>
 
 <script>
   export default{
-    name: "home-index",
+    name: "editor",
     data() {
       return {
-        msg: "Hello word,I am Ms.Z"
+        value: '',
+        defaultData: "preview",
       }
     }
   }
 </script>
 
 <style>
-
   #home-index{
     /*background-image: url('/static/images/1.jpg');*/
+  }
+  #editor {
+
+  }
+  .markdown-body{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
   }
 </style>
