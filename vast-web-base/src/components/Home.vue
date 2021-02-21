@@ -84,6 +84,11 @@
       margin: 0px;
       padding: 0px;
     }
+    #MyHead .el-menu li{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
     .header-bottom-border{
       /*box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)*/
       border-bottom: 1px solid #eaecef;

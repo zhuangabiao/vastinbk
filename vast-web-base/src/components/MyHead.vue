@@ -10,11 +10,11 @@
         <el-row  type="flex" class="row-bg" justify="end">
             <div class="grid-content bg-purple" >
               <el-menu  :default-active="activeIndex" class="nav" mode="horizontal" @select="handleSelect">
-                <el-menu-item index="1">处理中心</el-menu-item>
+                <el-menu-item index="1">博客</el-menu-item>
                 <el-menu-item index="2">我的工作台</el-menu-item>
                 <el-menu-item index="3">消息中心</el-menu-item>
                 <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
-                <el-submenu index="5" style="top: 10px;">
+                <el-submenu index="5">
                   <template slot="title">我的工作台</template>
                   <el-menu-item index="5-1">选项1</el-menu-item>
                   <el-menu-item index="5-2">选项2</el-menu-item>
@@ -48,7 +48,7 @@
 </script>
 <style>
 .el-menu--popup-bottom-start{
-  top: 60px;
+  /*top: 60px;*/
 }
 </style>
 
