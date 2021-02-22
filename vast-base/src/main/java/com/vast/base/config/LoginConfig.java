@@ -23,7 +23,7 @@ import java.util.List;
  * @Version: 1.0
  * ====================================================
  */
-@Configuration
+//@Configuration
 public class LoginConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
