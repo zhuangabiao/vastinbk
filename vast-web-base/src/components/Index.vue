@@ -21,9 +21,10 @@
         //console.log(value);
       }
       ,saveData: function (value, render) {
+        var _this = this;
         console.log('>>>>>>>>' + this.value);
         var url = 'http://localhost:9091/vast/mark/menu/list';
-        _this.$http.get(
+        this.$http.get(
           url
           ,{
             params: {

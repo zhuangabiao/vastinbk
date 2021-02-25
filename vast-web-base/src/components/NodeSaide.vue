@@ -16,12 +16,13 @@
     >
       <template v-for="item in list">
         <router-link :to="item.url" :key="item.fileCode" v-if="item.children ==undefined || item.children.length===0">
-          <el-menu-item :index="item.fileCode" :item-type="item.fileCode" v-on:click="createNewMark">
+          <el-menu-item :index="item.fileCode" :item-type="item.fileCode" v-on:click="createNewMark()">
             <i :class="item.icon"></i>
             <span slot="title">{{item.fileName}}</span>
           </el-menu-item>
         </router-link>
-        <subMenu v-else :data="item" :key="item.fileCode"></subMenu>
+
+        <subMenu  v-else :data="item" :key="item.fileCode" :item-click="subNodeClick(item)"></subMenu>
       </template>
     </el-menu>
   </div>
@@ -45,9 +46,6 @@
     },
     created () {
       this.loadData()
-    },
-    mounted() {
-      // this.loadData();
     }
     ,methods: {
       loadData: function () {
@@ -66,9 +64,13 @@
           _this.list = res.data.data;
         });
       }
-      ,createNewMark: function () {
+      ,createNewMark() {
         console.log("==========>>>>>>>>>>")
-        subMenu.createSubNewMark();
+        // this.$refs
+        // subMenu.createSubNewMark();
+      }
+      ,subNodeClick(item) {
+        console.log("sub==========>>>>>>>>>>" + item.fileCode);
       }
     }
   };
