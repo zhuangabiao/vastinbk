@@ -22,7 +22,7 @@
           </el-menu-item>
         </router-link>
 
-        <subMenu  v-else :data="item" :key="item.fileCode" :item-click="subNodeClick(item)"></subMenu>
+        <subMenu  v-else :data="item" :key="item.fileCode" :fileCode="fileCode" @submenuClick="subNodeClick(item)"></subMenu>
       </template>
     </el-menu>
   </div>
@@ -41,7 +41,8 @@
         list: [], //当行菜单数据源
         backgroundColor: "", //导航菜单背景颜色
         textColor: "#333", //导航菜单文字颜色
-        logo: "LOGO" //logo
+        logo: "LOGO", //logo
+        fileCode: ""
       };
     },
     created () {
@@ -70,7 +71,7 @@
         // subMenu.createSubNewMark();
       }
       ,subNodeClick(item) {
-        console.log("sub==========>>>>>>>>>>" + item.fileCode);
+        console.log("sub==========>>>>>>>>>>" + this.fileCode);
       }
     }
   };

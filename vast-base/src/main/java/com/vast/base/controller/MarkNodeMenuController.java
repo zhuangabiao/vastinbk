@@ -33,13 +33,14 @@ public class MarkNodeMenuController {
     public BaseResult list() {
         List<MarkNodeMenuDTO> list = new ArrayList();
         List<MarkNodeMenuDTO> list1 = new ArrayList();
+        List<MarkNodeMenuDTO> list2 = new ArrayList();
 
         list.add(new MarkNodeMenuDTO("10001","首页",null,"",null));
-        list.add(new MarkNodeMenuDTO("10002","按钮",null,"",null));
+        list.add(new MarkNodeMenuDTO("10002","按钮",null,"",list2));
         list.add(new MarkNodeMenuDTO("10003","测试1",null,"",list1));
         list1.add(new MarkNodeMenuDTO("10004","测试1-1",null,"",null));
-        list1.add(new MarkNodeMenuDTO("10005","测试1-2",null,"",null));
-
+        list1.add(new MarkNodeMenuDTO("10005","测试1-2",null,"",list2));
+        list2.add(new MarkNodeMenuDTO("10006","测试2-2",null,"",null));
         return new BaseResult(MyResponse.OK,list,null);
     }
 }
