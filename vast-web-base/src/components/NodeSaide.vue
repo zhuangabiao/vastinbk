@@ -16,24 +16,26 @@
     >
       <template v-for="item in list">
         <router-link :to="item.url" :key="item.fileCode" v-if="item.children ==undefined || item.children.length===0">
-          <el-menu-item :index="item.fileCode" :item-type="item.fileCode" v-on:click="createNewMark()">
+          <el-menu-item :index="item.fileCode" :item-type="item.fileCode" v-on:click="saide.clickItem(item.fileCode)">
             <i :class="item.icon"></i>
             <span slot="title">{{item.fileName}}</span>
           </el-menu-item>
         </router-link>
-
-        <subMenu  v-else :data="item" :key="item.fileCode" :fileCode="fileCode" @submenuClick="subNodeClick(item)"></subMenu>
+       <!-- <subSaide  v-else :data="item" :key="item.fileCode" :fileCode="fileCode" @submenuClick="subNodeClick(item)"></subSaide>-->
+        <subSaide  v-else :data="item" :key="item.fileCode" :fileCode="fileCode" ></subSaide>
       </template>
     </el-menu>
   </div>
 </template>
 
 <script>
-  import subMenu from "@/components/submenu.vue"
+  // import subMenu from "@/components/submenu.vue"
+  import subSaide from "@/components/subSaide.vue"
+  import index from "../router";
   export default {
     name: "menuList",
     components: {
-      subMenu
+      subSaide
     },
     data() {
       return {
@@ -70,8 +72,9 @@
         // this.$refs
         // subMenu.createSubNewMark();
       }
-      ,subNodeClick(item) {
-        console.log("sub==========>>>>>>>>>>" + this.fileCode);
+      ,subNodeClick(itemCode) {
+        console.log("sub==========>>>>>>>>>>" + itemCode);
+        index.itemCode = itemCode;
       }
     }
   };

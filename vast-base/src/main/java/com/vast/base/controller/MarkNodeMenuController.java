@@ -3,6 +3,8 @@ package com.vast.base.controller;
 import com.vast.base.core.result.BaseResult;
 import com.vast.base.core.result.MyResponse;
 import com.vast.base.dto.dto.MarkNodeMenuDTO;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,7 +28,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/vast/mark/menu/")
 public class MarkNodeMenuController {
-
+    Logger logger = LoggerFactory.getLogger("MarkNodeMenuController");
     @CrossOrigin(origins = "*",maxAge = 3600)
     @RequestMapping("list")
     @ResponseBody
@@ -42,5 +44,13 @@ public class MarkNodeMenuController {
         list1.add(new MarkNodeMenuDTO("10005","测试1-2",null,"",list2));
         list2.add(new MarkNodeMenuDTO("10006","测试2-2",null,"",null));
         return new BaseResult(MyResponse.OK,list,null);
+    }
+    @CrossOrigin(origins = "*",maxAge = 3600)
+    @RequestMapping("save")
+    @ResponseBody
+    public BaseResult save(String saideCode,String msg) {
+
+        logger.info("saideCode:" + saideCode + " MSG:" + msg);
+        return new BaseResult();
     }
 }

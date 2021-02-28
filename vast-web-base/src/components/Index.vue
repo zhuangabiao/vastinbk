@@ -8,6 +8,8 @@
 </template>
 
 <script>
+  import markCommon from "../commonFuntion/markCommon";
+
   export default{
     name: "editor",
     data() {
@@ -22,19 +24,23 @@
       }
       ,saveData: function (value, render) {
         var _this = this;
+
+        console.log('itemCode>>>>>>>>' + markCommon.data().itemCode);
+        console.log('>>>>>>>>' + index.itemCode)
         console.log('>>>>>>>>' + this.value);
-        var url = 'http://localhost:9091/vast/mark/menu/list';
+        var url = 'http://localhost:9091/vast/mark/menu/save';
         this.$http.get(
           url
           ,{
             params: {
-              
+              msg: this.value
+              ,saideCode: '10001'
             }
           }).then(function (res) {
 
           let newStr = JSON.parse(JSON.stringify(res.data));
-          console.log(res.data.data);
-          _this.list = res.data.data;
+          // console.log(res.data.data);
+          // _this.list = res.data.data;
         });
       }
     }

@@ -21,7 +21,8 @@ public class BaseResult {
     private int code;
     private String msg;
     private Object data;
-
+    public BaseResult() {
+    }
     public BaseResult(int code) {
         this(code,null);
     }
