@@ -60,8 +60,8 @@ create table base_menu_role(
 );
 
 -- Blog目录表
-drop table if exists directory;
-create table directory(
+drop table if exists blog_directory;
+create table blog_directory(
     directory_code varchar(32) primary key comment '目录编号',
     directory_name varchar(100) comment '目录名称',
     parent_code varchar(32) comment '上级目录，如果是第一级目录则为0',
@@ -71,12 +71,14 @@ create table directory(
 );
 
 -- Blog目录内容表
-drop table if exists directory_content;
-create table mark_note(
+drop table if exists blog_directory_content;
+create table blog_directory_content(
     id int primary key auto_increment,
-    file_code varchar(32) comment '目录编码',
-    note_title varchar(200) comment '标题',
-    note_content MEDIUMTEXT comment '文本内容',
+    content_code varchar(32) comment '内容编号',
+    directory_code varchar(32) comment '目录编码',
+    blog_title varchar(200) comment '标题',
+    mark_content MEDIUMTEXT comment 'mark格式文本内容',
+    html_content MEDIUMTEXT comment 'html格式的内容',
     create_date date comment '创建时间',
     update_date date comment '修改时间',
     create_user varchar(32) comment '创建人'
