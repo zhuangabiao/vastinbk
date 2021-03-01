@@ -70,6 +70,15 @@ create table blog_directory(
     state int comment '状态'
 );
 
+INSERT INTO `blog_directory` VALUES ('10001', 'java', '0', NULL, '1001', 1);
+INSERT INTO `blog_directory` VALUES ('10002', 'java基础', '10001', NULL, '1001', 1);
+INSERT INTO `blog_directory` VALUES ('10003', 'spring', '10001', NULL, '1001', 1);
+INSERT INTO `blog_directory` VALUES ('10004', 'spring cloud', '10001', NULL, '1001', 1);
+INSERT INTO `blog_directory` VALUES ('10005', 'mybatis', '0', NULL, '1001', 1);
+INSERT INTO `blog_directory` VALUES ('10006', 'vue', '0', NULL, '1001', 1);
+INSERT INTO `blog_directory` VALUES ('10007', 'linux', '0', NULL, '1001', 1);
+INSERT INTO `blog_directory` VALUES ('10008', 'mysql', '0', NULL, '1001', 1);
+
 -- Blog目录内容表
 drop table if exists blog_directory_content;
 create table blog_directory_content(

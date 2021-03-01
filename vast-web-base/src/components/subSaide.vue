@@ -1,19 +1,19 @@
 <template>
-   <el-submenu :index="data.fileCode" >
+   <el-submenu :index="data.directoryCode" >
      <template slot="title" >
-       <el-menu-item :index="data.fileCode" :icode="data.fileCode" style="padding-left: 0px" @click="clickSubItem(data.fileCode)" >
+       <el-menu-item :index="data.directoryCode" :icode="data.directoryCode" style="padding-left: 0px" @click="clickSubItem(data.directoryCode)" >
          <i :class="data.icon"></i>
-         <span>{{data.fileName}}</span>
+         <span>{{data.directoryName}}</span>
        </el-menu-item>
      </template>
      <template v-for="item in data.children">
-       <router-link :to="item.url" :key="item.fileCode" v-if="item.children ==undefined || item.children.length===0">
-         <el-menu-item class="subitem" :index="item.fileCode" :code="item.fileCode" @click="clickSubItem(item.fileCode)" >
+       <router-link :to="item.url" :key="item.directoryCode" v-if="item.children ==undefined || item.children.length===0">
+         <el-menu-item class="subitem" :index="item.directoryCode" :code="item.directoryCode" @click="clickSubItem(item.directoryCode)" >
            <i :class="item.icon"></i>
-           <span slot="title">{{item.fileName}}</span>
+           <span slot="title">{{item.directoryName}}</span>
          </el-menu-item>
        </router-link>
-      <sub-saide v-else :data="item" :key="item.fileCode"></sub-saide>
+      <sub-saide v-else :data="item" :key="item.directoryCode"></sub-saide>
      </template>
    </el-submenu>
 </template>

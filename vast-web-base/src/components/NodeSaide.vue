@@ -15,14 +15,14 @@
       :collapse="collapse"
     >
       <template v-for="item in list">
-        <router-link :to="item.url" :key="item.fileCode" v-if="item.children ==undefined || item.children.length===0">
-          <el-menu-item :index="item.fileCode" :item-type="item.fileCode" v-on:click="refEditor(item.fileCode)">
+        <router-link :to="item.url" :key="item.directoryCode" v-if="item.children == undefined || item.children.length===0">
+          <el-menu-item :index="item.directoryCode" :item-type="item.directoryCode" v-on:click="refEditor(item.directoryCode)">
             <i :class="item.icon"></i>
-            <span slot="title">{{item.fileName}}</span>
+            <span slot="title">{{item.directoryName}}</span>
           </el-menu-item>
         </router-link>
        <!-- <subSaide  v-else :data="item" :key="item.fileCode" :fileCode="fileCode" @submenuClick="subNodeClick(item)"></subSaide>-->
-        <subSaide  v-else :data="item" :key="item.fileCode" :fileCode="fileCode" @clearBlog="clearSaide"></subSaide>
+        <subSaide  v-else :data="item" :key="item.directoryCode" :fileCode="directoryCode" @clearBlog="clearSaide"></subSaide>
       </template>
     </el-menu>
   </div>
@@ -46,7 +46,7 @@
         backgroundColor: "", //导航菜单背景颜色
         textColor: "#333", //导航菜单文字颜色
         logo: "LOGO", //logo
-        fileCode: ""
+        directoryCode: ""
       };
     },
     created () {
@@ -63,8 +63,7 @@
 
             }
           }).then(function (res) {
-
-          let newStr = JSON.parse(JSON.stringify(res.data));
+          let newStr = JSON.parse(JSON.stringify(res.data.data));
           console.log(res.data.data);
           _this.list = res.data.data;
         });
