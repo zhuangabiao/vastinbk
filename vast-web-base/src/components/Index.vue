@@ -20,13 +20,13 @@
     }
     ,methods: {
       changeData: function (value, render) {
-        //console.log(value);
+        console.log(render);
+        markCommon.markValue = value;
       }
       ,saveData: function (value, render) {
         var _this = this;
 
-        console.log('itemCode>>>>>>>>' + markCommon.data().itemCode);
-        console.log('>>>>>>>>' + index.itemCode)
+        console.log('itemCode>>>>>>>>' + markCommon.saideCode);
         console.log('>>>>>>>>' + this.value);
         var url = 'http://localhost:9091/vast/mark/menu/save';
         this.$http.get(
@@ -34,7 +34,7 @@
           ,{
             params: {
               msg: this.value
-              ,saideCode: '10001'
+              ,saideCode: markCommon.saideCode
             }
           }).then(function (res) {
 
@@ -42,6 +42,10 @@
           // console.log(res.data.data);
           // _this.list = res.data.data;
         });
+      }
+      ,clearMark: function () {
+        console.log(">>>>>>index is clear>>>>>>")
+        this.value = '';
       }
     }
   }

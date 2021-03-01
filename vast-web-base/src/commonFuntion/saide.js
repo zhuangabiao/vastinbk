@@ -1,5 +1,9 @@
+import markCommon from "../commonFuntion/markCommon";
 export default{
-  clickItem(itemCode) {
-    console.log("saide>>>>>>>>" + itemCode);
+  clickItem(saideCode) {
+    console.log("saide>>>>>>>>" + saideCode);
+    markCommon.saideCode = saideCode;
+    console.log("markValue>>>>>>>>" + markCommon.markValue);
+
   }
 }

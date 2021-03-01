@@ -38,6 +38,7 @@
        clickSubItem: function (itemCode) {
          // console.log(">>>>>>>" + itemCode);
          saide.clickItem(itemCode);
+         this.$emit('clearBlog');
          // this.$parent.subNodeClick(itemCode);
        }
      }

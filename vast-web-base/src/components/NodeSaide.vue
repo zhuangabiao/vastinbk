@@ -16,13 +16,13 @@
     >
       <template v-for="item in list">
         <router-link :to="item.url" :key="item.fileCode" v-if="item.children ==undefined || item.children.length===0">
-          <el-menu-item :index="item.fileCode" :item-type="item.fileCode" v-on:click="saide.clickItem(item.fileCode)">
+          <el-menu-item :index="item.fileCode" :item-type="item.fileCode" v-on:click="refEditor(item.fileCode)">
             <i :class="item.icon"></i>
             <span slot="title">{{item.fileName}}</span>
           </el-menu-item>
         </router-link>
        <!-- <subSaide  v-else :data="item" :key="item.fileCode" :fileCode="fileCode" @submenuClick="subNodeClick(item)"></subSaide>-->
-        <subSaide  v-else :data="item" :key="item.fileCode" :fileCode="fileCode" ></subSaide>
+        <subSaide  v-else :data="item" :key="item.fileCode" :fileCode="fileCode" @clearBlog="clearSaide"></subSaide>
       </template>
     </el-menu>
   </div>
@@ -31,7 +31,9 @@
 <script>
   // import subMenu from "@/components/submenu.vue"
   import subSaide from "@/components/subSaide.vue"
+
   import index from "../router";
+  import markCommon from "../commonFuntion/markCommon";
   export default {
     name: "menuList",
     components: {
@@ -74,7 +76,15 @@
       }
       ,subNodeClick(itemCode) {
         console.log("sub==========>>>>>>>>>>" + itemCode);
-        index.itemCode = itemCode;
+
+      }
+      ,refEditor(itemCode) {
+        //刷新markdown页面
+        console.log("refEditor==========>>>>>>>>>>" + itemCode);
+        this.$emit('clearMark');
+      }
+      ,clearSaide(itemCode) {
+        this.$emit('clearMark');
       }
     }
   };

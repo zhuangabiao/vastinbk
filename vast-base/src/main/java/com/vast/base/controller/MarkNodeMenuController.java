@@ -51,6 +51,8 @@ public class MarkNodeMenuController {
     public BaseResult save(String saideCode,String msg) {
 
         logger.info("saideCode:" + saideCode + " MSG:" + msg);
+
+
         return new BaseResult();
     }
 }

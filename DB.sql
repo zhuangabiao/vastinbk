@@ -5,6 +5,7 @@ use vast_inbk;
 drop table if exists base_users;
 create table base_users(
     id int primary key auto_increment comment 'ID',
+    user_code varchar(32) not null comment '用户编号',
     username varchar(50) not null comment '用户名',
     pwd varchar(64) not null comment '密码',
     status int not null default 1 comment '账号状态 0：不可用，1：可用，默认为1',
@@ -58,9 +59,19 @@ create table base_menu_role(
     role_code varchar(20) not null comment '角色编号'
 );
 
+-- Blog目录表
+drop table if exists directory;
+create table directory(
+    directory_code varchar(32) primary key comment '目录编号',
+    directory_name varchar(100) comment '目录名称',
+    parent_code varchar(32) comment '上级目录，如果是第一级目录则为0',
+    directory_type int comment '目录类型',
+    user_code varchar(32) comment '用户ID',
+    state int comment '状态'
+);
 
--- 笔记文本记录表
-drop table if exists mark_note;
+-- Blog目录内容表
+drop table if exists directory_content;
 create table mark_note(
     id int primary key auto_increment,
     file_code varchar(32) comment '目录编码',
@@ -71,13 +82,5 @@ create table mark_note(
     create_user varchar(32) comment '创建人'
 );
 
--- 笔记目录表
-drop table if exists mark_note_menu;
-create table mark_note_menu(
-    file_code varchar(32) primary key comment '目录编号',
-    user_id int comment '用户ID',
-    file_name varchar(100) comment '目录名称',
-    parent_code varchar(32) comment '上级目录，如果是第一级目录则为0',
-    state int comment '状态'
-);
+
 

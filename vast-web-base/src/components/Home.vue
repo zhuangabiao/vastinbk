@@ -5,15 +5,16 @@
         <MyHead></MyHead>
       </el-header>
       <el-container>
-        <el-aside width="300px" class="saide-right-border">
+        <MarkContent></MarkContent>
+        <!--<el-aside width="300px" class="saide-right-border">
           <NodeSaide></NodeSaide>
         </el-aside>
         <el-container>
           <el-main class="my-border">
             <Index></Index>
           </el-main>
-<!--          <el-footer>Footer</el-footer>-->
-        </el-container>
+&lt;!&ndash;          <el-footer>Footer</el-footer>&ndash;&gt;
+        </el-container>-->
       </el-container>
     </el-container>
   </div>
@@ -23,6 +24,7 @@
     import MySaide from '@/components/MySaide.vue';
     import Index from '@/components/Index.vue';
     import NodeSaide from '@/components/NodeSaide.vue';
+    import MarkContent from '@/components/MarkContent.vue';
 
     export default {
       name: 'app',
@@ -30,7 +32,8 @@
         MyHead,
         MySaide,
         Index,
-        NodeSaide
+        NodeSaide,
+        MarkContent
       },
       data(){
         return {
