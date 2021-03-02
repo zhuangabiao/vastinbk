@@ -35,8 +35,8 @@
      }
      ,methods: {
        clickSubItem: function (itemCode,type) {
-         markCommon.saideType = type;
          markCommon.saideCode = itemCode;
+         markCommon.saideType = type;
          // saide.clickItem(itemCode);
          this.$emit('clearBlog');
          // this.$parent.subNodeClick(itemCode);

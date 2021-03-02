@@ -15,6 +15,7 @@
     name: "editor",
     data() {
       return {
+        id: '',
         title: '',
         value: '',
         defaultData: "preview",
@@ -32,7 +33,8 @@
           url
           ,{
             params: {
-              title: this.title
+              id: this.id
+              ,title: this.title
               ,markContent: this.value
               ,saideCode: markCommon.saideCode
             }
@@ -55,11 +57,14 @@
 
             let newStr = JSON.parse(JSON.stringify(res.data));
             console.log(newStr)
+            this.id = res.data.data.id;
             this.value = res.data.data.markContent;
             this.title = res.data.data.blogTitle;
+            markCommon.saideCode = res.data.data.directoryCode;
           });
         }else {
           this.value = '';
+          this.id = '';
         }
       }
     }

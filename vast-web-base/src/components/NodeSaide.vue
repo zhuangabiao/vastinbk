@@ -78,8 +78,8 @@
       ,refEditor(itemCode,type) {
         //刷新markdown页面
         console.log("refEditor==========>>>>>>>>>>" + itemCode + itemCode);
-        markCommon.saideType = type;
         markCommon.saideCode = itemCode;
+        markCommon.saideType = type;
         this.$emit('clearMark');
       }
       ,clearSaide() {
