@@ -46,7 +46,6 @@ public class BlogDirectoryService extends BaseDBServiceImpl<BlogDirectory> imple
             List<BlogDirectory> list = blogDirectoryMapper.select(blogDirectory);
 
             if(null != list && list.size() > 0) {
-
                 for(BlogDirectory directory : list) {
                     BlogDirectoryDTO dto = new BlogDirectoryDTO();
                     dto.setDirectoryCode(StringUtils.isBlank(directory.getDirectoryCode()) ? null : directory.getDirectoryCode());
@@ -54,22 +53,15 @@ public class BlogDirectoryService extends BaseDBServiceImpl<BlogDirectory> imple
 //                    dto.setIcon(StringUtils.isBlank(directory.get()) ? null : directory.getDirectoryCode());
                     dto.setType(ConfigFinal.BLOG_DIRECTORY_TYPE);
                     dto.setDirectoryCode(StringUtils.isBlank(directory.getDirectoryCode()) ? null : directory.getDirectoryCode());
+                    dto.setUrl("#");
 
                     List<BlogDirectoryDTO> childDtoList = findDirectory(userCode,directory.getDirectoryCode());
-                    if(null != childDtoList && childDtoList.size() > 0) {
-                        dto.setChildren(childDtoList);
+                    if(childDtoList == null) {
+                        childDtoList = new ArrayList<>();
                     }
-
                     List<BlogDirectoryDTO> childContentDtoList = findDirectoryContent(directory.getDirectoryCode());
-                    if(childContentDtoList.size() > 0) {
-                        if(null != dto.getChildren() && dto.getChildren().size() > 0) {
-                            childDtoList.addAll(dto.getChildren());
-                            dto.setChildren(childDtoList);
-                        }else {
-                            dto.setChildren(null);
-                        }
-
-                    }
+                    childDtoList.addAll(childContentDtoList);
+                    dto.setChildren(childDtoList);
                     dtoList.add(dto);
                 }
             }
@@ -90,6 +82,7 @@ public class BlogDirectoryService extends BaseDBServiceImpl<BlogDirectory> imple
                     dto.setDirectoryCode(StringUtils.isBlank(content.getContentCode()) ? null : content.getContentCode());
                     dto.setDirectoryName(StringUtils.isBlank(content.getBlogTitle()) ? null : content.getBlogTitle());
                     dto.setType(ConfigFinal.BLOG_DIRECTORY_TYPE_CONTENT);
+                    dto.setUrl("#");
                     dtoList.add(dto);
                 }
             }

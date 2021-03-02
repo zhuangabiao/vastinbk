@@ -4,6 +4,7 @@ import com.vast.base.core.mapper.BaseDBMapper;
 import com.vast.base.entity.BlogDirectory;
 import com.vast.base.entity.BlogDirectoryContent;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 /**
@@ -21,4 +22,5 @@ import org.springframework.stereotype.Component;
 @Component
 @Mapper
 public interface BlogDirectoryContentMapper extends BaseDBMapper<BlogDirectoryContent> {
+    BlogDirectoryContent getByCode(@Param("code") String code);
 }

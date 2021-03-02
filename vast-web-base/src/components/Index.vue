@@ -1,5 +1,6 @@
 <template>
     <div id="editor">
+        <el-input v-model="title"></el-input>
         <mavon-editor
           @change="changeData"
           @save="saveData"
@@ -14,6 +15,7 @@
     name: "editor",
     data() {
       return {
+        title: '',
         value: '',
         defaultData: "preview",
       }
@@ -25,27 +27,40 @@
       }
       ,saveData: function (value, render) {
         var _this = this;
-
-        console.log('itemCode>>>>>>>>' + markCommon.saideCode);
-        console.log('>>>>>>>>' + this.value);
-        var url = 'http://localhost:9091/vast/mark/menu/save';
+        var url = 'http://localhost:9091/vast/blog/directory/content/save';
         this.$http.get(
           url
           ,{
             params: {
-              msg: this.value
+              title: this.title
+              ,markContent: this.value
               ,saideCode: markCommon.saideCode
             }
           }).then(function (res) {
 
           let newStr = JSON.parse(JSON.stringify(res.data));
-          // console.log(res.data.data);
-          // _this.list = res.data.data;
         });
       }
       ,clearMark: function () {
-        console.log(">>>>>>index is clear>>>>>>")
-        this.value = '';
+        if('dc' === markCommon.saideType) {
+          console.log(">>>>>>index is clear>>>>>>" + markCommon.saideCode + "   "+ markCommon.saideType)
+          var url = 'http://localhost:9091/vast/blog/directory/content/getByCode';
+          this.$http.get(
+            url
+            ,{
+              params: {
+                contentCode: markCommon.saideCode
+              }
+            }).then(function (res) {
+
+            let newStr = JSON.parse(JSON.stringify(res.data));
+            console.log(newStr)
+            this.value = res.data.data.markContent;
+            this.title = res.data.data.blogTitle;
+          });
+        }else {
+          this.value = '';
+        }
       }
     }
   }

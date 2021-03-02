@@ -2,6 +2,7 @@ package com.vast.base.service;
 
 import com.vast.base.core.service.IBaseDBService;
 import com.vast.base.entity.BlogDirectory;
+import com.vast.base.entity.BlogDirectoryContent;
 
 /**
  * @ProjectName: vastinbk
@@ -15,5 +16,7 @@ import com.vast.base.entity.BlogDirectory;
  * @Version: 1.0
  * =================================================
  */
-public interface IBlogDirectoryContentService extends IBaseDBService<BlogDirectory> {
+public interface IBlogDirectoryContentService extends IBaseDBService<BlogDirectoryContent> {
+
+     BlogDirectoryContent getByCode(String code);
 }

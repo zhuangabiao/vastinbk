@@ -16,7 +16,7 @@
     >
       <template v-for="item in list">
         <router-link :to="item.url" :key="item.directoryCode" v-if="item.children == undefined || item.children.length===0">
-          <el-menu-item :index="item.directoryCode" :item-type="item.directoryCode" v-on:click="refEditor(item.directoryCode)">
+          <el-menu-item :index="item.directoryCode" :item-type="item.type" v-on:click="refEditor(item.directoryCode,item.type)">
             <i :class="item.icon"></i>
             <span slot="title">{{item.directoryName}}</span>
           </el-menu-item>
@@ -55,7 +55,7 @@
     ,methods: {
       loadData: function () {
         var _this = this;
-        var url = 'http://localhost:9091/vast/mark/menu/list';
+        var url = 'http://localhost:9091/vast/blog/directory/list';
         _this.$http.get(
           url
           ,{
@@ -70,19 +70,20 @@
       }
       ,createNewMark() {
         console.log("==========>>>>>>>>>>")
-        // this.$refs
-        // subMenu.createSubNewMark();
       }
       ,subNodeClick(itemCode) {
         console.log("sub==========>>>>>>>>>>" + itemCode);
 
       }
-      ,refEditor(itemCode) {
+      ,refEditor(itemCode,type) {
         //刷新markdown页面
-        console.log("refEditor==========>>>>>>>>>>" + itemCode);
+        console.log("refEditor==========>>>>>>>>>>" + itemCode + itemCode);
+        markCommon.saideType = type;
+        markCommon.saideCode = itemCode;
         this.$emit('clearMark');
       }
-      ,clearSaide(itemCode) {
+      ,clearSaide() {
+        console.log("clearSaide==========>>>>>>>>>>" + markCommon.saideType);
         this.$emit('clearMark');
       }
     }

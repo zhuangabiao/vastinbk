@@ -2,8 +2,9 @@ export default {
   data() {
     return{
       markValue: '',
-      saideCode: '',
-      itemCode: ''
+      saideCode: '',  //菜单绑定的ID
+      itemCode: '',
+      saideType: ''
     }
   }
 }

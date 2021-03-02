@@ -1,19 +1,19 @@
 <template>
    <el-submenu :index="data.directoryCode" >
      <template slot="title" >
-       <el-menu-item :index="data.directoryCode" :icode="data.directoryCode" style="padding-left: 0px" @click="clickSubItem(data.directoryCode)" >
+       <el-menu-item :index="data.directoryCode" :icode="data.directoryCode" style="padding-left: 0px" v-on:click="clickSubItem(data.directoryCode,data.type)" >
          <i :class="data.icon"></i>
          <span>{{data.directoryName}}</span>
        </el-menu-item>
      </template>
      <template v-for="item in data.children">
        <router-link :to="item.url" :key="item.directoryCode" v-if="item.children ==undefined || item.children.length===0">
-         <el-menu-item class="subitem" :index="item.directoryCode" :code="item.directoryCode" @click="clickSubItem(item.directoryCode)" >
+         <el-menu-item class="subitem" :index="item.directoryCode" :code="item.directoryCode" v-on:click="clickSubItem(item.directoryCode,item.type)" >
            <i :class="item.icon"></i>
            <span slot="title">{{item.directoryName}}</span>
          </el-menu-item>
        </router-link>
-      <sub-saide v-else :data="item" :key="item.directoryCode"></sub-saide>
+      <sub-saide v-else :data="item" :key="item.directoryCode" @clearBlog="clickSub"></sub-saide>
      </template>
    </el-submenu>
 </template>
@@ -24,7 +24,6 @@
      name: "subSaide",
      data() {
        return {
-
        };
      },
      props: {
@@ -35,11 +34,15 @@
        }
      }
      ,methods: {
-       clickSubItem: function (itemCode) {
-         // console.log(">>>>>>>" + itemCode);
-         saide.clickItem(itemCode);
+       clickSubItem: function (itemCode,type) {
+         markCommon.saideType = type;
+         markCommon.saideCode = itemCode;
+         // saide.clickItem(itemCode);
          this.$emit('clearBlog');
          // this.$parent.subNodeClick(itemCode);
+       }
+       ,clickSub: function () {
+         this.$emit('clearBlog');
        }
      }
    };

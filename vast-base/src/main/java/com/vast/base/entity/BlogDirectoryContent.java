@@ -20,7 +20,7 @@ import javax.persistence.Table;
 public class BlogDirectoryContent {
 
     @Id
-    private Integer id;
+    private String id;
     private String contentCode;    //内容编号',
     private String directoryCode;    //目录编码',
     private String blogTitle;    //标题',
@@ -31,11 +31,11 @@ public class BlogDirectoryContent {
     private String createUser;    //创建人'
 
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -82,7 +82,7 @@ INSERT INTO `blog_directory` VALUES ('10008', 'mysql', '0', NULL, '1001', 1);
 -- Blog目录内容表
 drop table if exists blog_directory_content;
 create table blog_directory_content(
-    id int primary key auto_increment,
+    id varchar(32) primary key ,
     content_code varchar(32) comment '内容编号',
     directory_code varchar(32) comment '目录编码',
     blog_title varchar(200) comment '标题',
