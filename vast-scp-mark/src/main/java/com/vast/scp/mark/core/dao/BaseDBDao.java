@@ -1,4 +1,4 @@
-package com.vast.base.core.mapper;
+package com.vast.scp.mark.core.dao;
 
 import org.springframework.stereotype.Component;
 import tk.mybatis.mapper.common.Mapper;
@@ -7,16 +7,16 @@ import tk.mybatis.mapper.common.MySqlMapper;
 /**
  * ====================================================
  *
- * @ProjectName: vast-inbk
- * @Package: com.vast.base.core.mapper
- * @ClassName: BaseDBMapper
+ * @ProjectName: vastinbk
+ * @Package: com.vast.scp.mark.core.dao
+ * @ClassName: BaseDBDao
  * @Author: Administrator
- * @Description: 集成tk.mapper
- * @Date: 2021/1/4 15:11
+ * @Description:
+ * @Date: 2021/3/9 15:51
  * ====================================================
  * @Version: 1.0
  * ====================================================
  */
 @Component
-public interface BaseDBMapper<T> extends Mapper<T>, MySqlMapper<T> {
+public interface BaseDBDao<T> extends Mapper<T>, MySqlMapper<T> {
 }

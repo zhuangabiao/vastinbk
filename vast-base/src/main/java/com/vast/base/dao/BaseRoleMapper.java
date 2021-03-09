@@ -1,23 +1,23 @@
-package com.vast.base.mappers;
+package com.vast.base.dao;
 
-import com.vast.base.core.mapper.BaseDBMapper;
-import com.vast.base.entity.BaseUserRole;
+import com.vast.base.core.dao.BaseDBMapper;
+import com.vast.base.entity.BaseRole;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
 /**
  * @ProjectName: vastinbk
  * @Package: com.vast.base.mappers
- * @ClassName: BaseUserRoleMapper
+ * @ClassName: BaseRoleMapper
  * @Author: Mr.Z
  * @Description:
- * @Date: 2021/1/14 22:12
+ * @Date: 2021/1/14 22:11
  * <p>
  * =================================================
  * @Version: 1.0
  * =================================================
  */
-@Component
 @Mapper
-public interface BaseUserRoleMapper extends BaseDBMapper<BaseUserRole> {
+@Component
+public interface BaseRoleMapper extends BaseDBMapper<BaseRole> {
 }

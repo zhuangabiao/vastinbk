@@ -61,7 +61,7 @@ public class LoginController extends BaseController {
                 return "home";
             }
         }catch (Exception e) {
-            logger.error(">>>>>>>>>>>>>>登录异常");
+            logger.error(">>>>>>>>>>>>>>登录异常" + e.getMessage());
         }
         return "login";
     }

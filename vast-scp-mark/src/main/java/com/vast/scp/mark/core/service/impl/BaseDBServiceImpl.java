@@ -1,9 +1,10 @@
-package com.vast.base.core.service.impl;
+package com.vast.scp.mark.core.service.impl;
 
-import com.vast.base.core.dao.BaseDBMapper;
-import com.vast.base.core.service.IBaseDBService;
-import com.vast.base.enums.ExceptionEnum;
-import com.vast.base.exception.WeServiceException;
+
+import com.vast.scp.mark.core.dao.BaseDBDao;
+import com.vast.scp.mark.core.service.IBaseDBService;
+import com.vast.scp.mark.units.enums.ExceptionEnum;
+import com.vast.scp.mark.units.exception.WeServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 
@@ -28,7 +29,7 @@ import java.util.List;
 public class BaseDBServiceImpl<T> implements IBaseDBService<T> {
 
     @Autowired
-    private BaseDBMapper<T> baseDBMapper;
+    private BaseDBDao<T> baseDBMapper;
 
     @Override
     public List<T> findAll() {

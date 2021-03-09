@@ -1,4 +1,4 @@
-package com.vast.base.entity;
+package com.vast.scp.mark.entity;
 
 import tk.mybatis.mapper.annotation.KeySql;
 

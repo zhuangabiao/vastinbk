@@ -1,9 +1,9 @@
-package com.vast.base.mappers;
+package com.vast.base.dao;
 
-import com.vast.base.core.mapper.BaseDBMapper;
-import com.vast.base.entity.BaseMenu;
-import com.vast.base.entity.BlogDirectory;
+import com.vast.base.core.dao.BaseDBMapper;
+import com.vast.base.entity.BlogDirectoryContent;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 /**
@@ -20,5 +20,6 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Mapper
-public interface BlogDirectoryMapper extends BaseDBMapper<BlogDirectory> {
+public interface BlogDirectoryContentMapper extends BaseDBMapper<BlogDirectoryContent> {
+    BlogDirectoryContent getByCode(@Param("code") String code);
 }

@@ -1,17 +1,17 @@
-package com.vast.base.mappers;
+package com.vast.base.dao;
 
-import com.vast.base.core.mapper.BaseDBMapper;
-import com.vast.base.entity.BaseMenu;
+import com.vast.base.core.dao.BaseDBMapper;
+import com.vast.base.entity.BaseUserRole;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
 /**
  * @ProjectName: vastinbk
  * @Package: com.vast.base.mappers
- * @ClassName: BaseMenuMapper
+ * @ClassName: BaseUserRoleMapper
  * @Author: Mr.Z
  * @Description:
- * @Date: 2021/1/14 22:10
+ * @Date: 2021/1/14 22:12
  * <p>
  * =================================================
  * @Version: 1.0
@@ -19,5 +19,5 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Mapper
-public interface BaseMenuMapper extends BaseDBMapper<BaseMenu> {
+public interface BaseUserRoleMapper extends BaseDBMapper<BaseUserRole> {
 }

@@ -4,7 +4,9 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/vast_inbk?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+#    url: jdbc:mysql://47.110.86.61:3306/vast_inbk?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
+#    password: Vast@522326
     password: 123456
   thymeleaf:
     enabled: true  #开启thymeleaf视图解析
@@ -15,7 +17,12 @@ spring:
     suffix: .html  #后缀名
   mvc:
     static-path-pattern: /static/** #配置静态文件
-
 mybatis:
   mapper-locations: classpath*:/mappers/*Mapper.xml
   type-aliases-package: com.vast.base.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 设置控制台输入执行的sql语句
+#mapper:
+#  mappers: com.vast.base.mappers
+#  not-empty: false
+#  identity: mysql

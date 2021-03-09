@@ -1,0 +1,16 @@
+# 应用名称
+spring:
+  application:
+    name: vast-scp-mark
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vast_inbk?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    #    url: jdbc:mysql://47.110.86.61:3306/vast_inbk?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    #    password: Vast@522326
+    password: 123456
+server:
+  port: 9092
+mybatis:
+  type-aliases-package: com.vast.scp.mark.entity
+  mapper-locations: classpath*:/mappers/*Mapper.xml

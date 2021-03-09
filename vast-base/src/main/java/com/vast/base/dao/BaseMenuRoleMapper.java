@@ -1,6 +1,6 @@
-package com.vast.base.mappers;
+package com.vast.base.dao;
 
-import com.vast.base.core.mapper.BaseDBMapper;
+import com.vast.base.core.dao.BaseDBMapper;
 import com.vast.base.entity.BaseMenuRole;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
