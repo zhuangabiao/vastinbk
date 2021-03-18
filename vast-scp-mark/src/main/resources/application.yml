@@ -14,3 +14,7 @@ server:
 mybatis:
   type-aliases-package: com.vast.scp.mark.entity
   mapper-locations: classpath*:/mappers/*Mapper.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8099/eureka/
