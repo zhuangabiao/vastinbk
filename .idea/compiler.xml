@@ -7,13 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="vast-base" />
+        <module name="vast-eureka-server" />
         <module name="vastinbk" />
+        <module name="vast-config" />
+        <module name="vast-scp-mark" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="vast-base" options="-parameters" />
+      <module name="vast-config" options="-parameters" />
+      <module name="vast-eureka-server" options="-parameters" />
+      <module name="vast-scp-mark" options="-parameters" />
     </option>
   </component>
 </project>
