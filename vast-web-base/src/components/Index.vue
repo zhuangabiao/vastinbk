@@ -29,7 +29,7 @@
       ,saveData: function (value, render) {
         var _this = this;
         var url = 'http://47.110.86.61:8080/vast/blog/directory/content/save';
-        this.$http.get(
+        this.$http.post(
           url
           ,{
             params: {

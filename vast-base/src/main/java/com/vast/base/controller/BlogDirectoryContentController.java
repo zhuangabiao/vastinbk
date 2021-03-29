@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Date;
@@ -40,7 +41,7 @@ public class BlogDirectoryContentController extends BaseController {
     private BlogDirectoryContentService blogDirectoryContentService;
 
     @CrossOrigin(origins = "*",maxAge = 3600)
-    @RequestMapping("save")
+    @RequestMapping(name = "save",method = RequestMethod.POST)
     @ResponseBody
     public BaseResult save(String id, String saideCode, String title, String markContent, String htmlContent) {
 

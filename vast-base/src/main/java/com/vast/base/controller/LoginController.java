@@ -9,6 +9,8 @@ import com.vast.base.service.IBaseUserService;
 import com.vast.base.units.SystemFinal;
 import com.vast.base.units.TokenUtil;
 import com.vast.base.units.VerifyUtil;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +23,7 @@ import javax.servlet.http.*;
 
 @Controller
 @RequestMapping("/vast")
+@Api(value = "登录相关", tags = "video")
 public class LoginController extends BaseController {
 
     @Autowired
@@ -31,6 +34,7 @@ public class LoginController extends BaseController {
         return "login";
     }
 
+    @ApiOperation(value = "验证码获取", notes = "验证码获取")
     @RequestMapping("/verifyCode")
     @ResponseBody
     public void verifyCode(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
@@ -42,6 +46,7 @@ public class LoginController extends BaseController {
         }
     }
 
+    @ApiOperation(value = "登录", notes = "登录接口")
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String login(HttpServletRequest request, HttpServletResponse response, String username, String pwd,
                         String verifyCode, ModelAndView model) {

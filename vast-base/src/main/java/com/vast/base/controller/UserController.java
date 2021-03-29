@@ -4,6 +4,8 @@ import com.vast.base.core.result.BaseResult;
 import com.vast.base.core.result.MyResponse;
 import com.vast.base.entity.BaseUsers;
 import com.vast.base.service.IBaseUserService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,6 +30,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/vast/user")
+@Api(value = "用户管理", tags = "user")
 public class UserController {
 
     @Autowired
@@ -39,6 +42,7 @@ public class UserController {
         return "systems/addUser";
     }
 
+    @ApiOperation(value = "添加用户",notes = "添加用户数据")
     @RequestMapping(value = "/addUser",method = RequestMethod.POST)
     @ResponseBody
     public BaseResult addUser(@RequestBody BaseUsers baseUsers) {

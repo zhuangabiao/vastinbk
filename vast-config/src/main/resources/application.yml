@@ -4,7 +4,10 @@ spring:
     name: vast-config
   cloud:
     config:
-      
+      server:
+        native:
+          search-locations: classpath:/config
+
 server:
   port: 8010
 eureka:
