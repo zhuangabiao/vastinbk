@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/vast-web-base/vast-web-base.iml" filepath="$PROJECT_DIR$/vast-web-base/vast-web-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/vast-web-markdown/vast-web-markdown.iml" filepath="$PROJECT_DIR$/vast-web-markdown/vast-web-markdown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vast-web-station/vast-web-station.iml" filepath="$PROJECT_DIR$/vast-web-station/vast-web-station.iml" />
     </modules>
   </component>
 </project>
