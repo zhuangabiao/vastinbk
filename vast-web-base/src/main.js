@@ -18,6 +18,8 @@ Vue.use(mavonEditor)
 Vue.use(VueResource)
 Vue.prototype.saide = Saide;
 
+axios.default.basePath = 'http://47.110.86.61';
+axios.default.basePort = '8080';
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

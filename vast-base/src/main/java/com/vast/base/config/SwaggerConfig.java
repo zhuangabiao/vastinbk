@@ -30,8 +30,8 @@ import javax.annotation.Resource;
  * @Version: 1.0
  * ====================================================
  */
-@Configuration
-@EnableSwagger2
+//@Configuration
+//@EnableSwagger2
 public class SwaggerConfig extends WebMvcConfigurationSupport {
 
     @Bean
