@@ -28,7 +28,7 @@
       }
       ,saveData: function (value, render) {
         var _this = this;
-        var url = 'http://47.110.86.61:8080/vast/blog/directory/content/save';
+        var url = _this.$api + '/vast/blog/directory/content/save';
         this.$http.post(
           url
           ,{
@@ -46,7 +46,7 @@
       ,clearMark: function () {
         if('dc' === markCommon.saideType) {
           console.log(">>>>>>index is clear>>>>>>" + markCommon.saideCode + "   "+ markCommon.saideType)
-          var url = 'http://47.110.86.61:8080/vast/blog/directory/content/getByCode';
+          var url =  _this.$api + '/vast/blog/directory/content/getByCode';
           this.$http.get(
             url
             ,{

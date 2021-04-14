@@ -55,7 +55,7 @@
     ,methods: {
       loadData: function () {
         var _this = this;
-        var url = 'http://47.110.86.61:8080/vast/blog/directory/list';
+        var url = this.$api + '/vast/blog/directory/list';
         _this.$http.get(
           url
           ,{

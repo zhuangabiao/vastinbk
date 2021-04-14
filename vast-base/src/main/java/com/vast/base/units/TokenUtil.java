@@ -52,17 +52,22 @@ public class TokenUtil {
     public static String getTokenUserId() {
 //        String token = getRequest().getHeader(SystemFinal.KEY_AUTHOR_TOKEN);// 从 http 请求头中取出 token
         Cookie[] cookies = getRequest().getCookies();
-        String token = null;
-        for (Cookie cookie : cookies) {
-            if(SystemFinal.KEY_AUTHOR_TOKEN.equals(cookie.getName())){
-                token = cookie.getValue();
+        if(null != cookies && cookies.length > 0) {
+            String token = null;
+            for (Cookie cookie : cookies) {
+                if (SystemFinal.KEY_AUTHOR_TOKEN.equals(cookie.getName())) {
+                    token = cookie.getValue();
+                }
             }
-        }
-        if(StringUtils.isBlank(token)) {
+            if (StringUtils.isBlank(token)) {
+                return null;
+            }
+            String userId = JWT.decode(token).getAudience().get(0);
+            return userId;
+        }else {
             return null;
         }
-        String userId = JWT.decode(token).getAudience().get(0);
-        return userId;
+
     }
 
     /**
